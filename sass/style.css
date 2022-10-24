@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --mainreg: "playregular", sans-serif;
+  --mainbold: "playbold", sans-serif;
+}
+
+@font-face {
+  font-family: "playregular";
+  src: url("../fonts/play-regular-webfont.woff2") format("woff2"), url("../fonts/play-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "playbold";
+  src: url("../fonts/play-bold-webfont.woff2") format("woff2"), url("../fonts/play-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  position: relative;
+  background-color: #f7f7f7;
+}
+
+nav {
+  position: relative;
+  background-color: #141313;
+  font-family: var(--mainreg);
+  font-size: 24px;
+  text-transform: uppercase;
+}
+nav img {
+  position: absolute;
+  -webkit-transform: translateY(-65%);
+          transform: translateY(-65%);
+  height: 60px;
+}
+nav .nav-link {
+  color: white;
+}
+nav i,
+nav .nav-link:hover {
+  color: rgb(56, 170, 52);
+}
+nav .navbar-brand {
+  font-weight: bold;
+}
+nav .active {
+  color: rgb(56, 170, 52);
+}
+nav .nav-link.disabled {
+  color: rgb(173, 173, 173);
+}
+nav .fa-bars {
+  padding: 10px;
+  color: aliceblue;
+}/*# sourceMappingURL=style.css.map */
