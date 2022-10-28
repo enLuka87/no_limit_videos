@@ -1,3 +1,4 @@
+@import "animation";
 *,
 *::before,
 *::after {
@@ -9,6 +10,7 @@
 :root {
 	--mainreg: "playregular", sans-serif;
 	--mainbold: "playbold", sans-serif;
+	--maincolor: rgb(56, 170, 52);
 }
 
 @font-face {
@@ -34,13 +36,22 @@ body {
 	background-color: #f7f7f7;
 }
 
+h2 {
+	text-transform: uppercase;
+	text-align: center;
+	font-family: var(--mainbold);
+	font-size: 28px;
+	letter-spacing: 2px;
+}
+
 nav {
 	position: relative;
 	// height: 100px;
 	background-color: #141313;
 	font-family: var(--mainreg);
-	font-size: 24px;
+	font-size: 18px;
 	text-transform: uppercase;
+	z-index: 3;
 	img {
 		position: absolute;
 		transform: translateY(-65%);
@@ -51,19 +62,131 @@ nav {
 	}
 	i,
 	.nav-link:hover {
-		color: rgb(56, 170, 52);
+		color: var(--maincolor);
 	}
+
 	.navbar-brand {
 		font-weight: bold;
 	}
-	.active {
-		color: rgb(56, 170, 52);
+
+	.navbar-nav {
+		.nav-link.active {
+			color: var(--maincolor);
+		}
 	}
+
 	.nav-link.disabled {
-		color: rgba(173, 173, 173, 1);
+		color: rgba(173, 173, 173, 0.55);
 	}
+
 	.fa-bars {
 		padding: 10px;
 		color: aliceblue;
+		font-size: 30px;
+	}
+}
+
+header {
+	.main-img {
+		position: relative;
+		height: 100vh;
+		background-image: url(../img/Katedra\ Praska\ mgła_light.jpg);
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+		z-index: 2;
+
+		.img-shadow {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			background-color: rgba(0, 0, 0, 0.6);
+			z-index: 0;
+		}
+
+		.under-construction {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			background-image: url(../img/underConstruction.png);
+			background-size: cover;
+			background-position: center;
+			z-index: 1;
+		}
+		.chev {
+			position: absolute;
+			top: 70%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-decoration: none;
+			font-family: var(--mainreg);
+			font-size: 24px;
+			color: #ffdf4f;
+			z-index: 2;
+		}
+	}
+}
+
+.contact-us {
+	font-size: 18px;
+	font-family: var(--mainreg);
+
+	.contact-item {
+		margin: 30px 0;
+		color: #141313;
+
+		h3 {
+			margin-bottom: 15px;
+			letter-spacing: 1px;
+		}
+
+		a {
+			color: #141313;
+			padding: 10px;
+			text-decoration: none;
+		}
+	}
+
+	.social-media {
+		font-size: 26px;
+
+		.fa-facebook-f:hover {
+			color: #1c78e0;
+		}
+
+		.fa-instagram:hover {
+			color: #fd486a;
+		}
+
+		.fa-youtube:hover {
+			color: #fd0013;
+		}
+	}
+
+	.locations {
+		p {
+			text-transform: uppercase;
+		}
+	}
+
+	.fa-solid,
+	.fa-brands {
+		color: var(--maincolor);
+		transition: color 0.3s;
+	}
+}
+
+@media (min-width: 768px) {
+	header {
+		.main-img {
+			background-image: url(../img/Katedra\ Praska\ mgła_heavy.jpg);
+		}
+	}
+}
+@media (min-width: 1200px) {
+	header {
+		.main-img {
+			background-image: url(../img/Katedra\ Praska\ mgła.jpg);
+		}
 	}
 }

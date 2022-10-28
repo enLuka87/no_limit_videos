@@ -13,17 +13,17 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar">
-    <nav class=" navbar navbar-expand-lg position-fixed top-0 w-100 py-3">
+    <nav class=" navbar navbar-expand-md position-fixed top-0 w-100 py-3">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="./logo/LOGO tylko NO LIMIT biało-czarne bez tła.png"></a>
+            <a class="navbar-brand" href="#home"><img src="./logo/LOGO tylko NO LIMIT biało-czarne bez tła.png"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link " aria-current="page" href="#">home</a>
-                    <a class="nav-link disabled" aria-current="page" href="#aboutus">o nas</a>
+                    <a class="nav-link " aria-current="page" href="#home">home</a>
+                    <a class="nav-link disabled" href="#aboutus">o nas</a>
                     <a class="nav-link disabled" href="#oferr">oferta</a>
                     <a class="nav-link disabled" href="#portfolio">portfolio</a>
                     <a class="nav-link " href="#contact">kontakt</a>
@@ -32,10 +32,52 @@
         </div>
 
     </nav>
+    <header id="home" class="home">
+        <div class="main-img">
+            <div class="img-shadow"></div>
+            <div class="under-construction"></div>
+            <a class="chev" href="#contact"><i class="fa-solid fa-chevron-down shake-vertical"></i> Sprawdź social
+                media! <i class="fa-solid fa-chevron-down shake-vertical"></i></a>
+        </div>
+    </header>
+    <main>
+        <section id="contact" class="contact py-5">
+            <h2>kontakt</h2>
+            <div class="container">
+                <div class="contact-us row text-center">
+                    <div class="contact-links contact-item col-sm-6 col-lg-4">
+                        <h3>telefon & mail</h3>
+                        <p><a href="tel:+48796400707"><i class="fa-solid fa-phone"></i> +48 796 400 707</a></p>
+                        <a href="mailto:nlv.niezbecki@gmail.com"><i class="fa-solid fa-envelope"></i>
+                            nlv.niezbecki@gmail.com</a>
+                    </div>
+                    <div class="social-media contact-item col-sm-6 col-lg-4">
+                        <h3>social media</h3>
+                        <a href="https://www.facebook.com/NoLimitVideos" target="_blank"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/nolimitvideos/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/nolimitvideos?reload=9" target="_blank"><i
+                                class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <div class="locations contact-item col-lg-4">
+                        <!--bez col-sm-6, żeby po zmniejszeniu poniżej lg zachowywał się jak element blokowy i był po środku-->
+                        <h3>lokalizacje</h3>
+                        <p><i class="fa-solid fa-location-crosshairs"></i> Warszawa</p>
+                        <p><i class="fa-solid fa-location-crosshairs"></i> Białystok</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-light py-4 text-center">
+        <p class="mb-0">&copy;2022 | NoLimitVideos</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
