@@ -47,7 +47,7 @@ h2 {
 nav {
 	position: relative;
 	// height: 100px;
-	background-color: #141313;
+	background-color: rgba(7.8, 7.5, 7.5, 0.8);
 	font-family: var(--mainreg);
 	font-size: 18px;
 	text-transform: uppercase;
@@ -55,7 +55,7 @@ nav {
 	img {
 		position: absolute;
 		transform: translateY(-65%);
-		height: 60px;
+		height: 50px;
 	}
 	.nav-link {
 		color: #ffff;
@@ -117,12 +117,19 @@ header {
 			position: absolute;
 			top: 70%;
 			left: 50%;
+			width: 90%;
 			transform: translate(-50%, -50%);
 			text-decoration: none;
+			text-transform: uppercase;
 			font-family: var(--mainreg);
-			font-size: 24px;
+			text-align: center;
 			color: #ffdf4f;
 			z-index: 2;
+			font-size: 20px;
+			a {
+				text-decoration: none;
+				color: #ffdf4f;
+			}
 		}
 	}
 }
@@ -173,6 +180,13 @@ header {
 	.fa-brands {
 		color: var(--maincolor);
 		transition: color 0.3s;
+	}
+}
+
+@media (min-width: 370px) {
+	.chev {
+		font-size: 24px;
+		color: #fd0013;
 	}
 }
 
