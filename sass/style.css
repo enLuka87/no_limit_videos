@@ -248,7 +248,7 @@ nav .fa-bars {
 header .main-img {
   position: relative;
   height: 100vh;
-  background-image: url(../img/Katedra\ Praska\ mgła_light.jpg);
+  background-image: url("../img/Katedra Praska mgła_light.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -265,14 +265,14 @@ header .main-img .under-construction {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: url(../img/underConstruction.png);
+  background-image: url("../img/underConstruction.png");
   background-size: cover;
   background-position: center;
   z-index: 1;
 }
 header .main-img .chev {
   position: absolute;
-  top: 70%;
+  top: 80%;
   left: 50%;
   width: 90%;
   -webkit-transform: translate(-50%, -50%);
@@ -307,6 +307,9 @@ header .main-img .chev a {
   padding: 10px;
   text-decoration: none;
 }
+.contact-us .contact-item .fa-solid:hover {
+  color: #1d6114;
+}
 .contact-us .social-media {
   font-size: 26px;
 }
@@ -337,11 +340,11 @@ header .main-img .chev a {
 }
 @media (min-width: 768px) {
   header .main-img {
-    background-image: url(../img/Katedra\ Praska\ mgła_heavy.jpg);
+    background-image: url("../img/Katedra Praska mgła_heavy.jpg");
   }
 }
 @media (min-width: 1200px) {
   header .main-img {
-    background-image: url(../img/Katedra\ Praska\ mgła.jpg);
+    background-image: url("../img/Katedra Praska mgła.jpg");
   }
 }/*# sourceMappingURL=style.css.map */
