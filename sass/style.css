@@ -307,8 +307,10 @@ header .main-img .chev a {
   padding: 10px;
   text-decoration: none;
 }
-.contact-us .contact-item .fa-solid:hover {
-  color: #1d6114;
+.contact-us .contact-item .contact-link a:hover > i {
+  color: #1c78e0;
+  -webkit-animation: none;
+          animation: none;
 }
 .contact-us .social-media {
   font-size: 26px;

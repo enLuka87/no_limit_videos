@@ -153,8 +153,11 @@ header {
 			text-decoration: none;
 		}
 
-		.fa-solid:hover {
-			color: #1d6114; //kolor słuchawki i listu
+		.contact-link {
+			a:hover > i {
+				color: #1c78e0; //kolor słuchawki i listu
+				animation: none; //zatrzymanie słuchawki od telefonu
+			}
 		}
 	}
 
