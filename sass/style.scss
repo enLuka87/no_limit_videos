@@ -54,8 +54,14 @@ nav {
 	z-index: 3;
 	img {
 		position: absolute;
-		transform: translateY(-65%);
+		transform: translateY(-60%);
 		height: 50px;
+	}
+	a {
+		transition: transform 0.3s;
+	}
+	a:hover {
+		transform: scale(.95);
 	}
 	.nav-link {
 		color: #ffff;
